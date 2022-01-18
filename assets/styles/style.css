@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+
+.header-bg{
+    width: 100%;
+    background-color: #fff;
+    height: fit-content;
+    border-bottom: 1px solid #dbdbdb;
+}
+header {
+    width: 100vw;
+    max-width: 934px;
+    height: 54px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo-area {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center ;
+}
+
+.logo-area .md.hydrated {
+    font-size: 19.25px;
+    margin-right: 11.38px;
+}
+
+.division-bar {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+    align-self: flex-start;
+    margin-right: 10px;
+}
+
+.search-bar-area{
+    width: 215px;
+    height: 28px;
+}
+
+header input {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    height: 26px;
+    width: 215px;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+header input:focus{
+    outline: none;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+
+header nav {
+    width: 161px;
+    height: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #000;
+}
+
+header nav ul li .md.hydrated {
+    font-size: 17.87px;
+}
+
+main {
+    width: 100vw;
+    max-width: 934px;
+    margin: 34px auto 0px;
+
+}
+
+.stories-overflow {
+    width: 614px;
+    overflow-x: hidden;
+}
+
+.stories-full-container{
+    width: 100vw;
+    height: 118px;
+    display: flex;
+    align-items: center;
+}
+
+.stories-area {
+    width: 614px;
+    height: 118px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    position: absolute;
+    z-index: -1;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 14px;
+}
+
+
+.story:first-of-type{
+    margin-left: 18px;
+}
+
+.story-gradient {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.story-bg {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-text {
+    font-size: 12px;
+    padding: 4px 0px;
+}
+
+
+
+
+.side-bar {
+    width: 300px;
+    height: 270px;
+    background-color: blue;
+    position: fixed;
+    top: 88px;
+    right: 216px;
+}
+
+
+
+.news-feed {
+    width: 614px;
+    height: 800px;
+    margin-top: 24px;
+    background-color: yellow;
+}
+
+
+
