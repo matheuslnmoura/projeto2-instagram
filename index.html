@@ -22,7 +22,7 @@
                 <div class="division-bar"></div>
                 <img src="assets/media/logo.png" alt="Instagram Logo">
             </div>
-            <input type="text" name="search" id="search" placeholder="Pesquisar">
+            <input type="text" name="search" id="search" placeholder="Search">
             <nav>
                 <ul>
                     <li><a href=""><ion-icon name="paper-plane-outline"></ion-icon></a></li>
@@ -36,9 +36,12 @@
 
     <main>
 
-        <div class="stories-overflow">
+        <section class="stories-overflow">
+            <div class="slide-button">
+                <div class="arrow"></div>
+            </div>
             <div class="stories-full-container">
-                <div class="stories-area"></div>
+
                 <div class="story">
                     <div class="story-gradient">
                         <div class="story-img">
@@ -141,12 +144,12 @@
                 </div> 
                 
             </div>
-        </div>
+        </section>
 
-        <div class="side-bar"></div>
+        <section class="news-feed">
 
-        <div class="news-feed">
             <div class="post-container">
+
                 <div class="post-header">
                     <div class="logo-area">
                         <div class="thumbnail">
@@ -160,6 +163,7 @@
                         <div class="options-dot"></div>
                     </div>
                 </div>
+
                 <div class="post-picture"></div>
                 <div class="post-interactions">
                     <div class="left-side">
@@ -171,20 +175,38 @@
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
+
                 <div class="reaction-info">
                     <img src="assets/media/respondeai 2.png" alt="Logo Responde Aí">
                     <span>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></span>
                 </div>
+
                 <div class="post-description">
                     <span><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
                     <button class="no-display">...mais</button>
                 </div>
+
                 <div class="comment-section">
                     <span>See all comments</span>
+                    <div class="comments-area no-display">
+                        <div class="comment">
+                            <p><span class="user-name">John Doe</span>OMGGGG, so cute! &#x1F60D; &#x1F60D; &#x1F60D;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">Jason Statham</span>He has better hair than me &#x1F923;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">dead.or.aline</span>BLESSED</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
-                <span class="time-stamp">15 minutes ago</span>
 
-                <div class="comment-area">
+                <span class="time-stamp">15 minutes ago</span>
+                
+                <div class="write-comment-area">
                     <form class="comment-form" action="" method="post">
                         <ion-icon name="happy-outline"></ion-icon>
                         <input type="text" name="comment" id="comment" placeholder="Add a coment..">
@@ -192,11 +214,10 @@
                     </form>
                 </div>
 
-
-
             </div>
 
             <div class="post-container">
+
                 <div class="post-header">
                     <div class="logo-area">
                         <div class="thumbnail">
@@ -210,7 +231,9 @@
                         <div class="options-dot"></div>
                     </div>
                 </div>
+
                 <div class="post-picture"></div>
+
                 <div class="post-interactions">
                     <div class="left-side">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -221,20 +244,38 @@
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
+
                 <div class="reaction-info">
                     <img src="assets/media/respondeai 2.png" alt="Logo Responde Aí">
                     <span>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></span>
                 </div>
+
                 <div class="post-description">
-                    <span><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
-                    <button class="no-display">...mais</button>
+                    <span class="post-collapse"><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
+                    <button>...mais</button>
                 </div>
+
                 <div class="comment-section">
                     <span>See all comments</span>
+                    <div class="comments-area">
+                        <div class="comment">
+                            <p><span class="user-name">John Doe</span>OMGGGG, so cute! &#x1F60D; &#x1F60D; &#x1F60D;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">Jason Statham</span>He has better hair than me &#x1F923;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">dead.or.aline</span>BLESSED</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
+
                 <span class="time-stamp">15 minutes ago</span>
 
-                <div class="comment-area">
+                <div class="write-comment-area">
                     <form class="comment-form" action="" method="post">
                         <ion-icon name="happy-outline"></ion-icon>
                         <input type="text" name="comment" id="comment" placeholder="Add a coment..">
@@ -247,12 +288,13 @@
             </div>
 
             <div class="post-container">
+
                 <div class="post-header">
                     <div class="logo-area">
                         <div class="thumbnail">
-                            <img src="assets/media/meowed 2.svg" alt="meowed logo">                           
+                            <img src="assets/media/nathanwpylestrangeplanet 1.svg" alt="meowed logo">                           
                         </div>
-                        <div class="user-name">meowed</div>
+                        <div class="user-name">Nathan W. Pyle</div>
                     </div>
                     <div class="options">
                         <div class="options-dot"></div>
@@ -260,7 +302,9 @@
                         <div class="options-dot"></div>
                     </div>
                 </div>
+
                 <div class="post-picture"></div>
+
                 <div class="post-interactions">
                     <div class="left-side">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -271,20 +315,50 @@
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
+
                 <div class="reaction-info">
                     <img src="assets/media/respondeai 2.png" alt="Logo Responde Aí">
                     <span>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></span>
                 </div>
+
                 <div class="post-description">
-                    <span><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
+                    <span><div class="user-name" >Nathan W. Pyle</div>Lorem ipsum dolor sit amet,
+                        <br>
+                         consectetur adipiscing elit. 
+                         <br>
+                         .
+                         <br>
+                         <br>
+                         .
+                         <br>
+                         <br>
+                         .
+                         <br>
+                         Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin digni</span>
                     <button class="no-display">...mais</button>
                 </div>
+
                 <div class="comment-section">
-                    <span>See all comments</span>
+                    <span class="no-display">See all comments</span>
+                    <div class="comments-area">
+                        <div class="comment">
+                            <p><span class="user-name">Mary Jane Watson</span>im dyin'  &#x1F923; &#x1F923; &#x1F923; &#x1F923; &#x1F923;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">marksloan</span>LOL</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">floridaman</span>wtf</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
+
                 <span class="time-stamp">15 minutes ago</span>
 
-                <div class="comment-area">
+                <div class="write-comment-area">
                     <form class="comment-form" action="" method="post">
                         <ion-icon name="happy-outline"></ion-icon>
                         <input type="text" name="comment" id="comment" placeholder="Add a coment..">
@@ -292,17 +366,16 @@
                     </form>
                 </div>
 
-
-
             </div> 
             
             <div class="post-container">
+
                 <div class="post-header">
                     <div class="logo-area">
                         <div class="thumbnail">
-                            <img src="assets/media/meowed 2.svg" alt="meowed logo">                           
+                            <img src="assets/media/9gag 1.png" alt="9 gag logo">                           
                         </div>
-                        <div class="user-name">meowed</div>
+                        <div class="user-name">9 gag</div>
                     </div>
                     <div class="options">
                         <div class="options-dot"></div>
@@ -310,12 +383,14 @@
                         <div class="options-dot"></div>
                     </div>
                 </div>
+
                 <div class="post-picture">
                     <video autoplay muted loop controls poster="" class="bg_video">
                         <source src="assets/media/video.mp4" type="video/mp4">
                         <source src="assets/media/video.ogv" type="video/ogv">
                     </video>	
                 </div>
+
                 <div class="post-interactions">
                     <div class="left-side">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -326,20 +401,38 @@
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
+
                 <div class="reaction-info">
                     <img src="assets/media/respondeai 2.png" alt="Logo Responde Aí">
                     <span>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></span>
                 </div>
+
                 <div class="post-description">
-                    <span><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
-                    <button class="no-display">...mais</button>
+                    <span class="post-collapse"><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
+                    <button>...mais</button>
                 </div>
+
                 <div class="comment-section">
                     <span>See all comments</span>
+                    <div class="comments-area no-display">
+                        <div class="comment">
+                            <p><span class="user-name">John Doe</span>OMGGGG, so cute! &#x1F60D; &#x1F60D; &#x1F60D;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">Jason Statham</span>He has better hair than me &#x1F923;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">dead.or.aline</span>BLESSED</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
+
                 <span class="time-stamp">15 minutes ago</span>
 
-                <div class="comment-area">
+                <div class="write-comment-area">
                     <form class="comment-form" action="" method="post">
                         <ion-icon name="happy-outline"></ion-icon>
                         <input type="text" name="comment" id="comment" placeholder="Add a coment..">
@@ -347,11 +440,10 @@
                     </form>
                 </div>
 
-
-
             </div>
             
             <div class="post-container">
+
                 <div class="post-header">
                     <div class="logo-area">
                         <div class="thumbnail">
@@ -365,7 +457,9 @@
                         <div class="options-dot"></div>
                     </div>
                 </div>
+
                 <div class="post-picture"></div>
+
                 <div class="post-interactions">
                     <div class="left-side">
                         <ion-icon name="heart-outline"></ion-icon>
@@ -376,20 +470,38 @@
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
+
                 <div class="reaction-info">
                     <img src="assets/media/respondeai 2.png" alt="Logo Responde Aí">
                     <span>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></span>
                 </div>
+
                 <div class="post-description">
                     <span><div class="user-name" >meowed </div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum, lectus ullamcorper mattis condimentum, leo felis tincidunt sem, ac vestibulum elit nisi at tortor. Proin dignissim rhoncus placerat. Nam vel enim ex. Quisque ligula augue, dictum eget mollis eget, ullamcorper sit amet mauris. Suspendisse finibus at dui eget auctor. Sed pharetra placerat erat sit amet aliquet. Nam dapibus finibus mauris, eu congue lectus maximus et. Suspendisse sit amet pharetra urna, eget mattis magna.</span>
                     <button class="no-display">...mais</button>
                 </div>
+
                 <div class="comment-section">
                     <span>See all comments</span>
+                    <div class="comments-area">
+                        <div class="comment">
+                            <p><span class="user-name">John Doe</span>OMGGGG, so cute! &#x1F60D; &#x1F60D; &#x1F60D;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">Jason Statham</span>He has better hair than me &#x1F923;</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                        <div class="comment">
+                            <p><span class="user-name">dead.or.aline</span>BLESSED</p>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
                 </div>
+
                 <span class="time-stamp">15 minutes ago</span>
 
-                <div class="comment-area">
+                <div class="write-comment-area">
                     <form class="comment-form" action="" method="post">
                         <ion-icon name="happy-outline"></ion-icon>
                         <input type="text" name="comment" id="comment" placeholder="Add a coment..">
@@ -397,13 +509,15 @@
                     </form>
                 </div>
 
-
-
             </div>
             
-        </div>
+        </section>
         
     </main>
+
+    <aside>
+        <div class="side-bar"></div>
+    </aside>
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></body>
