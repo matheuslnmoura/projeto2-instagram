@@ -12,6 +12,9 @@ body {
 
 
 .header-bg{
+    position: fixed;
+    z-index: 1;
+    top: 0;
     width: 100%;
     background-color: #fff;
     height: fit-content;
@@ -108,7 +111,7 @@ header nav ul li .md.hydrated {
 main {
     width: 100vw;
     max-width: 934px;
-    margin: 34px auto 0px;
+    margin: 54px auto 0px;
 
 }
 
@@ -193,18 +196,6 @@ main {
 .story-text {
     font-size: 12px;
     padding: 4px 0px;
-}
-
-
-
-
-.side-bar {
-    width: 300px;
-    height: 270px;
-    background-color: blue;
-    position: fixed;
-    top: 88px;
-    right: calc(50vw - 467px);
 }
 
 
@@ -475,6 +466,110 @@ main {
 
 
 
+
+
+
+.side-bar {
+    width: 300px;
+    position: fixed;
+    top: 88px;
+    right: calc(50vw - 467px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-user-area {
+    width: 100%;
+    height: 56px;
+    margin-bottom:24px;
+    display: flex;
+    align-items: center;
+}
+.main-user-area img {
+    margin-right: 17px;
+}
+.main-user-information {
+    display: flex;
+    flex-direction: column;
+}
+.main-user-id-name{
+    font-weight: 500;
+    font-size: 14px;
+}
+.main-user-name {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+
+
+.recommendations-area {
+    width: 90%;
+}
+
+
+
+.recommendations-header {
+    height: 15px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recommendations-header span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+}
+.recommendations-header div {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626
+}
+
+
+
+
+.recommended-profile {
+    height: 32px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recommended-profile .img-info-group {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} 
+
+.recommended-profile .information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+}
+
+.recommended-profile .id-name{
+    font-weight: 500;
+    font-size: 14px;
+}
+.recommended-profile .sub-header {
+    font-weight: 300;
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-top: 6px;
+}
+.follow-button {
+    font-weight: 500;
+    font-size: 12px;
+    color: #139EF2;
+    cursor: pointer;
+}
 
 
 
