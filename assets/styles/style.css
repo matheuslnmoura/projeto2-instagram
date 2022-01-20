@@ -8,6 +8,7 @@ html {
 
 body {
     background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 
@@ -126,6 +127,14 @@ main {
     position: relative;
 }
 
+
+.stories-full-container{
+    width: 3000px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+}
+
 .slide-button {
     width: 30px;
     height: 30px;
@@ -148,12 +157,6 @@ main {
     transform: rotate(45deg);
 }
 
-.stories-full-container{
-    width: 3000px;
-    height: 118px;
-    display: flex;
-    align-items: center;
-}
 
 
 
