@@ -111,7 +111,7 @@ header nav ul li .md.hydrated {
 main {
     width: 100vw;
     max-width: 934px;
-    margin: 54px auto 0px;
+    margin: 89px auto 0px;
 
 }
 
@@ -613,6 +613,10 @@ footer span {
 }
 footer span a {
     color: #C7C7C7;
+}
+
+.bottom-bar {
+    display: none;
 }
 
 
