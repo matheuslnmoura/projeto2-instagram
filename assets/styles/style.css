@@ -129,7 +129,7 @@ main {
 
 
 .stories-full-container{
-    width: 3000px;
+    width: 720px;
     height: 118px;
     display: flex;
     align-items: center;
@@ -218,6 +218,10 @@ main {
     background-color: #fff;
     border: 1px solid #DBDBDB;
     margin-bottom: 40px;
+}
+
+.post-container:last-child {
+    margin-bottom: 94px;
 }
 
 .post-header,
@@ -665,7 +669,16 @@ footer span a {
     .stories-overflow {
         background-color: transparent;
         border: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        /* hiding horizontal scroll bar */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
     }
+    .stories-overflow::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
 
     .slide-button {
         display: none;
@@ -680,6 +693,7 @@ footer span a {
         align-items: center;
         position: fixed;
         bottom: 0;
+       
     }
 
     .bottom-bar .icon.md.hydrated {
