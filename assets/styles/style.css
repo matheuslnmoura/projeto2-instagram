@@ -136,53 +136,63 @@ main {
 }
 
 .slide-button--left {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FAFAFA; 
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: calc(50% - 13px);
+    top: calc(50% - 25px);
     left: 0px;
     margin-left: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    background-image: url(../media/meta-icons.png);
+    background-size: auto;
+    background-position-x: -16px;
+    background-position-y: 173px;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
     cursor: pointer;
+    /* background-color: #000; */
+    transform: scale(.65);
 }
 
-.slide-button--left .arrow {
+/* .slide-button--left .arrow {
     width: 40%;
     height: 40%;
     border-top: 2px solid #666;
     border-right: 2px solid #666;
     transform: rotate(-135deg);
-}
+} */
 
 
 .slide-button--right {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FAFAFA; 
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: calc(50% - 13px);
+    top: calc(50% - 25px);
     right: 0px;
     margin-right: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    background-image: url(../media/meta-icons.png);
+    background-size: auto;
+    background-position-x: -115px;
+    background-position-y: 173px;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
     cursor: pointer;
+    /* background-color: #000; */
+    transform: scale(.65);
 }
 
-.slide-button--right .arrow {
+
+
+/* .slide-button--right .arrow {
     width: 40%;
     height: 40%;
     border-top: 2px solid #666;
     border-right: 2px solid #666;
     transform: rotate(45deg);
-}
+} */
 
 
 
@@ -411,8 +421,12 @@ main {
 .comment {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 8px;
+}
+
+.comment p {
+    margin-right: 3px;
 }
 
 .comments-area .comment span {
@@ -655,7 +669,7 @@ footer span a {
 
 
 @media (max-width:935px) {
-    .side-bar, 
+    .side-bar,
     footer {
         display: none;
     }
@@ -663,6 +677,7 @@ footer span a {
     section {
         margin: auto;
     }
+
 }
 
 @media (max-width: 614px) {
@@ -706,7 +721,8 @@ footer span a {
     }
 
 
-    .slide-button {
+    .slide-button--left,
+    .slide-button--right {
         display: none;
     }
 
